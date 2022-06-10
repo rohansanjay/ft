@@ -5,7 +5,7 @@ import { Ft } from "../src/Ft.sol";
 import "forge-std/Test.sol";
 
 contract FtTest is Test {
-    Ft ft;
+    Ft public ft;
 
     function setUp() public {
         ft = new Ft();
