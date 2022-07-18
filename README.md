@@ -30,6 +30,18 @@ forge test
 forge snapshot
 ```
 
+**Deploying**
+```bash
+source .env
+
+forge script \
+    script/Deploy.sol:Deploy \
+    --rpc-url $RPC_URL \
+    --private-key $PRIVATE_KEY \
+    --broadcast -vvv \
+    --verify --etherscan-api-key $ETHERSCAN_API_KEY
+```
+
 ## Inspired By
 
 - [femplate](https://github.com/abigger87/femplate)
